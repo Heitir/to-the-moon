@@ -72,6 +72,59 @@ public class string_dia_um {
 		//O import do Tokenizer, conta a quantidade de palavras dentro da string.
 		//O print retornará apenas a quantidade INT do número de tokens.
 		
+		ATIVIDADES CASA:
+		
+		Scanner au = new Scanner(System.in);
+		String aiai = au.next();
+		Scanner ai = new Scanner(System.in);
+		String auau = au.next();
+		String bili = aiai + auau;
+		System.out.println(bili);
+		//CONCATENA DUAS PALAVRAS DIGITADAS PELO USUÁRIO.
+		
+		Scanner x = new Scanner(System.in);
+		String c = x.next();
+		String r = "Por isso, você é indesculpável quando julga os outros, não importanteo quem você é.";
+		int pos = r.indexOf(c);
+		if (pos >= 0) {
+			System.out.println("A palavra existe no texto.");
+		}
+		else {
+			System.out.println("aiaia");
+		}
+		//Procura a palavra digitada pelo usuário dentro do texto.
+		
+		
+		
+		ATIVIDADES SALA:
+		1- 
+		String x = " texto para retirar os espaços do início e fim ";
+		String resultado = x.trim();
+		System.out.println(resultado);
+		
+		2-
+		Scanner auau = new Scanner(System.in);
+		StringTokenizer aa = new StringTokenizer(auau.nextLine());
+		System.out.println(aa.countTokens());
+		
+		3-
+		String texto01 = "Será que são iguais?";
+		String texto02 = "Será que são iguais?";
+		boolean c4 = texto01.equals(texto02);
+		System.out.println(c4);
+		
+		4-
+		Scanner ui = new Scanner(System.in);
+		String ai = ui.nextLine();
+		String aiai = ai.toUpperCase();
+		System.out.println(aiai);
+		
+		5-
+		String[] aiai = {"BELA", "A", "VIDA", "A"};
+		String x = new String();
+		x = x.join(" ", aiai);
+		x = x.toUpperCase();
+		System.out.println(x);
 		
 		
 		
