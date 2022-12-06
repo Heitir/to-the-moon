@@ -1,0 +1,37 @@
+package fundamentos;
+
+public class aula_string {
+	public static void main(String[] args) {
+		/*String str = "Hello";
+		String resultado = str.replace("l", "w");
+		int tres = 3;
+		String deed = 3 + "palavra" + tres;
+		System.out.println(deed);
+		String resultadot = str.substring(2, 4);
+		System.out.println(resultadot);
+		String novoresul = str.toUpperCase();
+		System.out.println(novoresul);
+		String outro = str.toLowerCase();
+		char c = str.charAt(4);
+		System.out.println(c);*/
+		
+		String s1 = "Hello";
+		String s2 = "HELLO";
+		boolean b1 = s1.equals("Hello");
+		boolean b2 = s1.equals(s2);
+		
+		boolean b3=s1.equalsIgnoreCase(s2);
+		boolean b4=s1.equalsIgnoreCase("Azul");
+		System.out.println(b1);
+		System.out.println(b2);
+		
+		System.out.println(b3);
+		System.out.println(b4);
+		
+		int tam = s2.length();
+		System.out.println(tam);
+		
+	}
+		
+	
+}
