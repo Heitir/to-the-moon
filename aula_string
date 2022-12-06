@@ -1,0 +1,34 @@
+public class string_dia_um {
+
+	public static void main(String[] args) {
+		final String str = "Hello";
+		String resultado = str.replace("l", "w");
+		System.out.println(resultado);
+		String mundo = resultado + " mundo";
+		System.out.println(mundo);
+		
+		int aiai = 3;
+		String kaka = mundo + aiai + "3";
+		System.out.println(kaka);
+		
+		String resultadoo = str.substring(2, 4);
+		System.out.println(resultadoo);
+		
+		String aaiiu = mundo.toUpperCase();
+		System.out.println(aaiiu);
+		String aiaiai = mundo.toLowerCase();
+		System.out.println(aiaiai);
+		
+		
+		String str2 = "     oi    ";
+		String resultado2 = str2.trim();
+		System.out.println(resultado2);
+		
+		char c = str.charAt(1);
+		System.out.println(c);
+    
+    
+
+	}
+
+}
