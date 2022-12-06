@@ -1,5 +1,7 @@
 package fundamentos;
 
+import java.util.StringTokenizer;
+
 public class aula_string {
 	public static void main(String[] args) {
 		/*String str = "Hello";
@@ -30,6 +32,24 @@ public class aula_string {
 		
 		int tam = s2.length();
 		System.out.println(tam);
+		
+		String sutr = "Hello World World2";
+		int pos = sutr.indexOf("2");
+		System.out.println(pos);
+		
+		String valor = "CDD4.0 - Java";
+		System.out.println(valor.compareTo("CDD4.0 - Java")== 0 ? true : false );
+		System.out.println(valor.compareTo("CDD4.0 - JAVA")== 0 ? true : false );
+		System.out.println(valor.compareToIgnoreCase("CDD4.0 - JAVA")== 0 ? true : false);
+		
+		String valore = "CDD - Java";
+		System.out.println(valor.endsWith("Java"));
+		System.out.println(valor.startsWith("C"));
+		System.out.println(valor.startsWith("DD", 1));
+		
+		StringTokenizer exemplo = new StringTokenizer("O mundo não é mais o mesmo mas não iremos desistir nunca");
+		
+		System.out.println(exemplo.countTokens());
 		
 	}
 		
