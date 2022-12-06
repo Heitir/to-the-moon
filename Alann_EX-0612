@@ -1,0 +1,53 @@
+package fundamentos;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class aulas_stringatv {
+	public static void main(String[] args) {
+		// ex1
+		
+		/*String texto = "  texto para retirar espaços do início ao fim  ";
+		String resultado = texto.trim();
+		System.out.println(resultado);*/
+		
+		//ex3
+		
+		/*Scanner retorno = new Scanner(System.in);
+		System.out.print("Digite um texto para contagem: ");
+		String texto = retorno.nextLine();
+		
+		StringTokenizer cont = new StringTokenizer(texto);
+		System.out.println(cont.countTokens());*/
+		
+		//ex4
+		
+		/*String texto1 = "Será que são iguais?";
+		String texto2 = "Será que são iguais?";
+		System.err.println(texto1.compareTo(texto2)==0 ? true:false);*/
+		
+		//ex5
+		
+		/*Scanner retorno = new Scanner(System.in);
+		System.out.println("Digite: ");
+		String texto = retorno.nextLine();
+		System.out.println(texto.toUpperCase());*/
+		
+		//ex6
+		/*String [] text = {"a", "vida", "é", "bela"};
+		String c = String.join(" "
+				+ "", text);
+		System.out.println(c.toUpperCase());*/
+		
+		//ex7
+		
+		/*String [] text = {"bela", "é", "vida", "a"};
+		String c = String.join(" "
+				+ "", text);
+		System.out.println(c.toUpperCase());*/
+		}
+		
+		
+	}
+
+
