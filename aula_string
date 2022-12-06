@@ -1,3 +1,4 @@
+import java.util.StringTokenizer;
 public class string_dia_um {
 
 	public static void main(String[] args) {
@@ -49,6 +50,30 @@ public class string_dia_um {
 		int pos = x.indexOf("l");
 		System.out.println(pos);
 		//Mostra a primeira posição em que a letra ("l") foi posicionada, no caso, 2.
+		
+		String valor = "CDD4.0 - Java";
+		System.out.println(valor.compareTo("CDD4.0 - Java") == 0 ? true:false);
+		System.out.println(valor.compareTo("CDD4.0 - JAVA") == 0 ? true:false);
+		System.out.println(valor.compareToIgnoreCase("CDD4.0 - JAVA") == 0 ? true:false);
+		//compara se o valor da string é igual a ( == 0) (True, False e True respectivamente).
+		//(?) compara se a condição é VERDADEIRA ou não.
+		//Nesse caso, IgnoreCase está ignorando que a casa está em maiúsculo, resultando em == 1 invés de == 0, porém, por conta do IgnoreCase, é True.
+		
+		String valor2 = "CDD - Java";
+		System.out.println(valor2.endsWith("Java"));
+		System.out.println(valor2.startsWith("C"));
+		System.out.println(valor2.startsWith("DD", 1));
+		//endswith "java" == True. (termina com)
+		//startswith == True. (começa com)
+		//startswith == True. (Começa com "DD", na casa (1)) respectivamente.
+		
+		StringTokenizer exemploo = new StringTokenizer ("O mundo não é mais o mesmo mas não iremos desistir jamais.");
+		System.out.println(exemploo.countTokens());
+		//O import do Tokenizer, conta a quantidade de palavras dentro da string.
+		//O print retornará apenas a quantidade INT do número de tokens.
+		
+		
+		
 		
 
 	}
