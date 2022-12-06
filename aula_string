@@ -6,29 +6,50 @@ public class string_dia_um {
 		System.out.println(resultado);
 		String mundo = resultado + " mundo";
 		System.out.println(mundo);
+		//trocar L por W ("l", "w");
 		
 		int aiai = 3;
 		String kaka = mundo + aiai + "3";
 		System.out.println(kaka);
+		//adicionar int em uma sequência de string
 		
 		String resultadoo = str.substring(2, 4);
 		System.out.println(resultadoo);
+		//começar a partir de e parar em (2, 4);
 		
 		String aaiiu = mundo.toUpperCase();
 		System.out.println(aaiiu);
 		String aiaiai = mundo.toLowerCase();
 		System.out.println(aiaiai);
-		
+		//forçar o string para maiúsculo e minúsculo, toUpperCase e toLowerCase (respectivamente).
 		
 		String str2 = "     oi    ";
 		String resultado2 = str2.trim();
 		System.out.println(resultado2);
+		//ignorar os espaços em branco do começo e do final da string
 		
 		char c = str.charAt(1);
 		System.out.println(c);
-    
-    
+		//mostra o character na casa selecionada ("hello world") (0, 1 (E)).
+		
+		String c2 = "e";
+		String c3 = "E";
+		boolean c4 = c2.equalsIgnoreCase(c3);
+		boolean c5 = c2.equals(c3);
+		System.out.println(c4);
+		System.out.println(c5);
+		//Compara strings para saber se são iguais, True e False respectivamente.
+		
+		String s = "abc";
+		int tam = s.length();
+		System.out.println(tam);
+		//Mostra o tamanho da string em INT. (3)
+		
+		String x = "Hello World";
+		int pos = x.indexOf("l");
+		System.out.println(pos);
+		//Mostra a primeira posição em que a letra ("l") foi posicionada, no caso, 2.
+		
 
 	}
-
 }
