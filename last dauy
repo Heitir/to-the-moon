@@ -1,0 +1,73 @@
+CLASSE CONTA //
+package Banco;
+
+abstract class Conta {
+	private int saldo;
+
+	public int getSaldo() {
+		return saldo;	
+	}
+
+	public void setSaldo(int saldo) {
+		this.saldo = saldo;
+	}
+	
+	public int deposita( int num ) {
+		
+		return num;
+	}
+	public int saque (int num, int sacar) {
+		return num - sacar;
+	}
+	public int depositoo (int num , int num2) {
+		return num + num2;
+	}
+	
+
+}
+
+MAIN //
+package Banco;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	Conta connta = new conta_corrente();
+	System.out.println("Digite o saldo que deseja depositar: ");
+	Scanner deposito = new Scanner(System.in);
+	int saldon = deposito.nextInt();
+	connta.setSaldo(saldon);
+	int retorno = connta.getSaldo();
+	
+	System.out.println("Este é seu saldo atualmente: ");
+	System.out.println(retorno);
+	
+	System.out.println("Digite um valor de saque: ");
+	Scanner saque = new Scanner(System.in);
+	int sacarr = saque.nextInt();
+	System.out.println(connta.saque(saldon, sacarr));
+	
+	System.out.println("Deseja depositar novamente?: (1-S/2-N) ");
+	Scanner entrada = new Scanner(System.in);
+	int escolha = entrada.nextInt();
+	if (escolha == 1) {
+		System.out.println("Digite o valor: ");
+		Scanner put = new Scanner(System.in);
+		int saldon2 = put.nextInt();
+		connta.depositoo(saldon, saldon2);
+		System.out.println("seu saldo agora é: ");
+		System.out.println(connta.depositoo(saldon, saldon2));
+		
+	}
+	else {
+		System.out.println("Se foda, pobre.");
+	}
+	
+	
+	
+
+	}
+
+}
