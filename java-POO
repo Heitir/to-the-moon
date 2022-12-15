@@ -1,0 +1,39 @@
+/* conta main
+
+package Banco;
+abstract class Conta {
+	private double saldo;
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	double saque(double Svalor) {
+		return this.saldo = saldo - Svalor;	
+	}
+	double deposito(double Dvalor) {
+		return this.saldo = saldo + Dvalor;
+		
+	}
+	
+	
+} */
+
+/* conta class
+
+package Banco;
+
+public class Banco_Main {
+	public static void main(String[] args) {
+		Conta_Corrente conta = new Conta_Corrente();
+		
+		conta.deposito(2000.0);
+		double ret1 = conta.getSaldo();
+		System.out.println(ret1);
+		
+		conta.saque(200.0);
+		double ret2 = conta.getSaldo();
+		System.out.println(ret2);
+	}
+
+} */
